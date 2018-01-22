@@ -14,6 +14,20 @@
   
 }
 
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
 .titulo {
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -22,6 +36,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+    animation-name: fadeInOut;
+  animation-delay: 1;
+  animation-duration: 9s;
 }
 
 
