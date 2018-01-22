@@ -12,23 +12,19 @@
   -o-background-size: cover;
   background-size: cover;
   background-color: black;
-  background-attachment:fixed
+  background-attachment: fixed;
   
 }
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-
-  45% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0%;
-  }
-}
+ @-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+ @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
 
 .titulo {
     text-align: center;
@@ -39,9 +35,12 @@
   left: 50%;
   opacity: 0;
   transform: translate(-50%, -50%);
-    animation-name: fadeInOut;
+    animation-name: fadeIn;
 	animation-delay: 2s;
-  animation-duration: 9s;
+  -webkit-animation-duration: 6s;
+            animation-duration: 10s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: forwards;
 }
 
 
