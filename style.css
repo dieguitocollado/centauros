@@ -1,0 +1,14 @@
+body {
+    background-image:    url(fondo.jpg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
+
+.titulo {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+	font-size: 250%;
+}
