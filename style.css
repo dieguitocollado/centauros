@@ -1,8 +1,10 @@
 body {
-    background-image:    url(fondo.png);
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;              /* optional, center the image */
+    background: url(fondo.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;
 }
 
 .titulo {
@@ -11,3 +13,4 @@ body {
     font-family: 'Oswald', sans-serif;
 	font-size: 250%;
 }
+
